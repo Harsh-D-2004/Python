@@ -12,6 +12,9 @@ def Schedule_Sunday():
     print("Schedular executes after each sunday : " , datetime.datetime.now())
 
 
+
+
+
 def main():
     print("Current time is : " , datetime.datetime.now())
 
