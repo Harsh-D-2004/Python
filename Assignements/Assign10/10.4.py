@@ -2,7 +2,7 @@ import os
 import shutil
 import sys
 
-def DirectoryWatcher(Dname1 , Dname2):
+def DirectoryWatcher(Dname1 , Dname2 , Extension):
 
     exists = os.path.isdir(Dname1)
     bVal = os.path.isabs(Dname1)
@@ -17,8 +17,9 @@ def DirectoryWatcher(Dname1 , Dname2):
         for folder , subfolder , filename in os.walk(Dname1):
 
             for fname in filename:
-                FilePath = os.path.join(folder , fname)
-                fileList.append(FilePath)
+                if fname.lower().endswith(Extension):
+                    FilePath = os.path.join(folder , fname)
+                    fileList.append(FilePath)
 
         os.mkdir(Dname2)
         exists = os.path.isdir(Dname2)
@@ -34,10 +35,10 @@ def DirectoryWatcher(Dname1 , Dname2):
                     
 def main():
 
-    if(len(sys.argv) == 3):
+    if(len(sys.argv) == 4):
 
         try:
-            DirectoryWatcher(sys.argv[1] , sys.argv[2])
+            DirectoryWatcher(sys.argv[1] , sys.argv[2] , sys.argv[3])
 
         except ValueError as vobj:
 
