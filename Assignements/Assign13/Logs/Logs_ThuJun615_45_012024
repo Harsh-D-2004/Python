@@ -1,0 +1,16 @@
+----------------------------------------------------------------------
+DUPLICATE FILE CLEANER LOG FILE
+Date/Time : 2024-06-06 15:45:01.653017+05:30
+----------------------------------------------------------------------
+Logs : 
+----------------------------------------------------------------------
+Duplicates found
+D:\Marvellous Infosystems\Python\Assignements\Assign13\Test\10.3 - Copy.py
+ D:\Marvellous Infosystems\Python\Assignements\Assign13\Test\10.3.py
+ D:\Marvellous Infosystems\Python\Assignements\Assign13\Test\10.4 - Copy.py
+ D:\Marvellous Infosystems\Python\Assignements\Assign13\Test\10.4.py
+ ----------------------------------------------------------------------
+Deleted Files : 
+D:\Marvellous Infosystems\Python\Assignements\Assign13\Test\10.3 - Copy.py
+D:\Marvellous Infosystems\Python\Assignements\Assign13\Test\10.4 - Copy.py
+----------------------------------------------------------------------
